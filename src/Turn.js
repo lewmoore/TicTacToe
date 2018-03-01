@@ -7,6 +7,7 @@ function Turn(player) {
 Turn.prototype.changeTurn = function() {
   this.currentTurn += 1;
   this._changePlayer(player);
+  return this.currentPlayer;
 };
 
 Turn.prototype._changePlayer = function(player) {

@@ -25,4 +25,8 @@ describe("Turn", function() {
     turn.changeTurn();
     expect(turn.currentPlayer).toEqual("O");
   });
+
+  it("Change turn returns the current player", function() {
+    expect(turn.changeTurn()).toEqual("O");
+  });
 });
