@@ -18,11 +18,8 @@ describe("Turn", function() {
   });
 
   it("current player can be changed to player O", function() {
-    // console.log(turn);
     turn.changeTurn();
-    // console.log(turn);
     turn.changePlayer(player);
-    // console.log(turn);
     expect(turn.currentPlayer).toEqual("O");
   });
 });
