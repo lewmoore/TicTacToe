@@ -8,6 +8,12 @@ describe("Turn", function() {
     expect(turn.maxTurnCount).toEqual(9);
   });
 
+  it("turn count doesnt exceed 9", function() {
+    turn.currentTurn = 9;
+    turn.changeTurn();
+    expect(turn.currentTurn).toEqual(9);
+  });
+
   it("current run defaults to 1", function() {
     expect(turn.currentTurn).toEqual(1);
   });
