@@ -16,4 +16,13 @@ describe("Turn", function() {
   it("sets current player to Player X byt default", function() {
     expect(turn.currentPlayer).toEqual("X");
   });
+
+  it("current player can be changed to player O", function() {
+    // console.log(turn);
+    turn.changeTurn();
+    // console.log(turn);
+    turn.changePlayer(player);
+    // console.log(turn);
+    expect(turn.currentPlayer).toEqual("O");
+  });
 });
