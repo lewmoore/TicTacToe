@@ -6,4 +6,8 @@ describe("Player", function() {
   it("Player has a player X", function() {
     expect(player.playerX).toEqual("X");
   });
+
+  it("Player has a player O", function() {
+    expect(player.playerO).toEqual("O");
+  });
 });
