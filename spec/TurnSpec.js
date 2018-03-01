@@ -19,7 +19,6 @@ describe("Turn", function() {
 
   it("current player can be changed to player O", function() {
     turn.changeTurn();
-    turn.changePlayer(player);
     expect(turn.currentPlayer).toEqual("O");
   });
 });
