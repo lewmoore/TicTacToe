@@ -1,6 +1,7 @@
 function Turn(player) {
   this.currentTurn = 1;
   this.currentPlayer = player.playerX;
+  this.maxTurnCount = 9;
 }
 
 Turn.prototype.changeTurn = function() {

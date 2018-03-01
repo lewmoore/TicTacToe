@@ -4,6 +4,10 @@ describe("Turn", function() {
     player = new Player();
   });
 
+  it("maximum turn count is set to 9", function() {
+    expect(turn.maxTurnCount).toEqual(9);
+  });
+
   it("current run defaults to 1", function() {
     expect(turn.currentTurn).toEqual(1);
   });
