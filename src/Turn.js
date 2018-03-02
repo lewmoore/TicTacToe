@@ -5,7 +5,7 @@ function Turn(player) {
 }
 
 Turn.prototype.changeTurn = function() {
-  if (this.currentTurn < 9) {
+  if (this.currentTurn < this.maxTurnCount) {
     this.currentTurn += 1;
   }
   this._changePlayer(player);

@@ -1,6 +1,9 @@
 describe("Game", function() {
   beforeEach(function() {
-    game = new Game();
+    player = new Player();
+    turn = new Turn(player);
+    game = new Game(turn, player);
+
   });
 
   it("Game initialises with an array", function() {
@@ -12,4 +15,9 @@ describe("Game", function() {
     + '\n' + '-----------\n' + ' ' + 4 + ' | ' + 5 + ' | ' + 6 + '\n' + '-----------\n'
   + ' ' + 7 + ' | ' + 8 + ' | ' + 9);
   });
+
+  it('Game takes a players move and changes the baord', function(){
+    game.playerMove(1)
+    expect(game.board[0]).toEqual('X')
+  })
 });
