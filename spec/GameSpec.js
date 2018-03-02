@@ -16,7 +16,7 @@ describe("Game", function() {
   + ' ' + 7 + ' | ' + 8 + ' | ' + 9);
   });
 
-  it('Game takes a players move and changes the baord', function(){
+  it('Games playerMove changes the board', function(){
     game.playerMove(1)
     expect(game.board[0]).toEqual('X')
   })
