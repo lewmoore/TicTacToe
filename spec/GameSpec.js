@@ -4,6 +4,8 @@ describe("Game", function() {
   });
 
   it("Game initialises with an array", function() {
-    expect(game.board).toEqual([]);
+    expect(game.board).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
   });
+
+
 });
