@@ -1,8 +1,7 @@
 describe("Game", function() {
   beforeEach(function() {
-    player = new Player();
     turn = new Turn(player);
-    game = new Game(turn, player);
+    game = new Game(turn);
 
   });
 
