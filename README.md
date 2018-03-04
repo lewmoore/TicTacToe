@@ -13,3 +13,5 @@ You can then take it in turns to add an X or O to the board with the command `ga
 ### Further Work
 
 This tech test is a work in progress and if I had more time to complete this I would include win conditions within the Game constructor function. This would consist of a prototype function that would identify if the `this.board` array has three consecutive elements of X or O.
+
+I would also most likely refactor the Player constructor function as it is only wrapped around playerX and playerO rather than having any particular behaviour.
