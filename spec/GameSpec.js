@@ -19,4 +19,10 @@ describe("Game", function() {
     game.playerMove(1)
     expect(game.board[0]).toEqual('X')
   })
+
+  it('playerMove switches player', function(){
+    game.playerMove(1)
+    game.playerMove(2)
+    expect(game.board[1]).toEqual('O')
+  })
 });
