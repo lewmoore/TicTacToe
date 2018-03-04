@@ -6,7 +6,7 @@ This is a short tech test that is designed to emulate a game of TicTacToe writte
 
 ### Instructions
 
-This game has been designed to be used in the console. In order to play this game, create a new game with `game = new Game(turn = new Turn(player = new Player))`. This generates a new game, with two players, X and O.
+This game has been designed to be used in the console. In order to play this game, create a new game with `game = new Game(turn = new Turn(player = new Player))`. This generates a new game, with two players, X and O. You can show the current board with `game.displayerBoard()`.
 
 You can then take it in turns to add an X or O to the board with the command `game.playerMove(1)` with the argument being the square you want to play.
 
